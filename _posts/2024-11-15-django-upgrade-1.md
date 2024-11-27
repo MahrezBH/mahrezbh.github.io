@@ -1,6 +1,6 @@
 ---
 title: "Migrating Django Versions: Preparing for Seamless Upgrades (1)"
-date: 2024-11-25
+date: 2024-11-15
 categories: [django, migrations, development]
 tags: [django, backend, migrations]
 ---

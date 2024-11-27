@@ -5,7 +5,7 @@ order: 5
 ---
 ## Hi, I'm Mahrez!
 
-Welcome to my personal blog! I'm a passionate software developer, currently working as a cloud computing engineer. My journey in tech began at a young age, and over the years, I've honed my skills in programming languages like Python, Java, and web development technologies such as Angular, Django, and Flask.
+Welcome to my personal blog! I'm a passionate software developer, currently working as a software engineer. My journey in tech began at a young age, and over the years, I've honed my skills in programming languages like Python, Java, and web development technologies such as Angular, Django, and Flask.
 
 ### My Skills
 

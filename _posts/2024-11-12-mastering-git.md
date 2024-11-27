@@ -1,8 +1,8 @@
 ---
 title: "Mastering Git: Advanced Techniques for Expert Developers"
-date: 2024-11-24
-categories: [git, development]
-tags: [git, version control, workflows, advanced tips]
+date: 2024-11-12
+categories: [development]
+tags: [git, advanced tips]
 ---
 
 Git is more than just a version control system—it's the backbone of every successful developer's workflow. While most developers are familiar with basic commands like `git add`, `git commit`, and `git push`, mastering advanced Git techniques can take your development skills to the next level.

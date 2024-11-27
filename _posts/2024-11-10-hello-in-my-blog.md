@@ -1,6 +1,6 @@
 ---
 title: Hello World
-date: 2024-11-23 20:14 +0300
+date: 2024-11-10 20:14 +0300
 categories: [Blogging]
 tags: [github-pages, blog, personal blog]
 comments: true

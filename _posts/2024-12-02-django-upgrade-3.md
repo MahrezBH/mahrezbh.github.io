@@ -58,7 +58,7 @@ Don’t let legacy code hang around. Fresh code makes your life easier down the 
 
 ### **4. Set Yourself Up for Future Success**  
 
-Think ahead, Mahrez-style.  
+Think ahead:  
 
 - **Automate Dependency Management**:  
    Tools like [Dependabot](https://github.com/dependabot) can monitor and suggest library updates for you.  

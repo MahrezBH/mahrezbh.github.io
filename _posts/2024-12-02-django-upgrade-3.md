@@ -1,6 +1,6 @@
 ---
 title: "Migrating Django Versions - Part 3: Post-Upgrade Optimization and Leveraging New Features"
-date: 2024-11-30
+date: 2024-12-02
 categories: [django, migrations, development]
 tags: [django, backend, migrations]
 ---

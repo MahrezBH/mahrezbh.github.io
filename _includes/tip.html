@@ -1,0 +1,32 @@
+<!-- _includes/tip.html -->
+<div class="alert alert-success d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">💡</div>
+  <div class="w-100">
+    <div class="alert-heading mb-2">Pro Tip</div>
+    <div class="alert-content">
+      {{ include.content | markdownify }}
+    </div>
+  </div>
+</div>
+
+<style>
+.alert-success {
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+  color: #67c23a;
+  border-left: 4px solid #67c23a;
+  padding: 1rem;
+  margin: 1.25rem 0;
+  border-radius: 4px;
+}
+.alert-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  line-height: 1;
+}
+.alert-heading {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+</style>

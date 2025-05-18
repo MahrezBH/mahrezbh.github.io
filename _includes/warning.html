@@ -1,0 +1,37 @@
+<!-- _includes/warning.html -->
+<div class="alert alert-warning d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">⚠️</div>
+  <div class="w-100">
+    <div class="alert-heading mb-2">Warning</div>
+    <div class="alert-content">
+      {{ include.content | markdownify }}
+    </div>
+  </div>
+</div>
+
+<style>
+.alert-warning {
+  background-color: #fdf6ec;
+  border-color: #faecd8;
+  color: #e6a23c;
+  border-left: 4px solid #e6a23c;
+  padding: 1rem;
+  margin: 1.25rem 0;
+  border-radius: 4px;
+}
+.alert-warning .alert-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  line-height: 1;
+}
+.alert-warning .alert-heading {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #e6a23c;
+}
+.alert-warning a {
+  color: #d48806;
+  text-decoration: underline;
+}
+</style>

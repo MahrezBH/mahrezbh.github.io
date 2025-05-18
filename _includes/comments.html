@@ -1,0 +1,15 @@
+<!-- _includes/comments.html -->
+{% if site.comments.provider %}
+  <div class="comments-section">
+    {% case site.comments.provider %}
+      {% when "disqus" %}
+        {% include comments/disqus.html %}
+      {% when "utterances" %}
+        {% include comments/utterances.html %}
+      {% when "giscus" %}
+        {% include comments/giscus.html %}
+      {% else %}
+        <!-- No comments configured -->
+    {% endcase %}
+  </div>
+{% endif %}

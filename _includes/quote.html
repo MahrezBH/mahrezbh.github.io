@@ -1,0 +1,83 @@
+<!-- _includes/quote.html -->
+<div class="quote-card">
+  <div class="quote-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+  </div>
+  <div class="quote-content">
+    <h3 class="quote-title">{{ include.title | default: "Inspiration" }}</h3>
+    <div class="quote-text">
+      {{ include.content | markdownify }}
+    </div>
+    {% if include.author %}
+    <div class="quote-author">— {{ include.author }}</div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+.quote-card {
+  background: var(--card-bg);
+  border-left: 4px solid var(--link-color);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+  display: flex;
+  gap: 1rem;
+  transition: all 0.2s ease;
+}
+
+.quote-card:hover {
+  border-left-width: 6px;
+  padding-left: 1.3rem;
+}
+
+.quote-icon {
+  color: var(--link-color);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.quote-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.quote-content {
+  flex-grow: 1;
+}
+
+.quote-title {
+  color: var(--link-color);
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.quote-text {
+  color: var(--text-color);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.quote-author {
+  color: var(--text-muted);
+  font-weight: 500;
+  text-align: right;
+}
+
+/* Dark mode specific adjustments */
+[data-dark-mode] .quote-card {
+  background: var(--card-bg-darker);
+  border-left-color: var(--link-color-dark);
+}
+
+[data-dark-mode] .quote-icon {
+  color: var(--link-color-dark);
+}
+
+[data-dark-mode] .quote-title {
+  color: var(--link-color-dark);
+}
+</style>

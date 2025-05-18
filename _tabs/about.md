@@ -5,7 +5,14 @@ order: 5
 ---
 ## Hi, I'm Mahrez!
 
-Welcome to my personal blog! I'm a passionate software developer, currently working as a software engineer. My journey in tech began at a young age, and over the years, I've honed my skills in programming languages like Python, Java, and web development technologies such as Angular, Django, and Flask.
+I am a dedicated software engineer with a strong passion for crafting elegant solutions through code.  
+My journey in technology began early and has evolved into a career centered around continuous learning and purposeful innovation.
+
+{% include quote.html 
+   title="My Grook of the Dev"
+   content="Tools may change, but craft endures<br>simplicity sharpens what complexity obscures."
+   author="Piet Hein" 
+%}
 
 ### My Skills
 

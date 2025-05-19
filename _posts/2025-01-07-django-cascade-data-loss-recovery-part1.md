@@ -3,6 +3,8 @@ title: "The Day We Lost Customer Data – A Django CASCADE Horror Story"
 date: 2025-01-08
 categories: [web-development, databases]
 tags: [django, postgresql, database-recovery, python]
+series: "Django Data Recovery Chronicles"
+series_index: 1
 ---
 
 # Part 1: The Day We Lost Customer Data – A Django CASCADE Horror Story  
@@ -105,5 +107,9 @@ class Payment(models.Model):
 ---
 
 ## Continue Reading in Part 2
-
-[**Part 2: The Surgical Data Recovery**](/posts/django-cascade-data-loss-recovery-part2/) is now available!
+{% assign part2 = site.posts | where: "title", "The Surgical Data Recovery - How We Restored 50,382 Records" | first %}
+{% if part2 %}
+[**{{ part2.title }}**]({{ part2.url }})
+{% else %}
+*Part 2 coming soon*
+{% endif %}

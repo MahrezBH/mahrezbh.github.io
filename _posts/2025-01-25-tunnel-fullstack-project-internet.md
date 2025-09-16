@@ -1,6 +1,6 @@
 ---
 title: "How to Tunnel Your Full-Stack Project to the Internet: A Complete Guide"
-date: 2025-09-15
+date: 2025-01-25
 categories: [development, devops, networking]
 tags: [tunneling, ngrok, docker, fullstack, development, caddy, reverse-proxy]
 ---
@@ -364,6 +364,35 @@ This setup is for **development and demos only**. For production:
 - Free tier URLs change on restart
 - Consider ngrok Pro for custom domains
 - Be mindful of what you expose
+
+## Troubleshooting Checklist
+
+- [ ] ngrok is running and shows online status
+- [ ] Caddy is listening on port 8080
+- [ ] Docker services are running (`docker compose ps`)
+- [ ] Frontend uses relative URLs for HTTPS
+- [ ] Backend allows all hosts (`ALLOWED_HOSTS = ['*']`)
+- [ ] CORS is configured properly
+- [ ] Media files route to Django, not frontend
+
+## Quick Commands Reference
+
+```bash
+# Start everything
+./tunnel.sh
+
+# Stop everything
+docker compose down && pkill ngrok && pkill caddy
+
+# Check status
+docker compose ps
+netstat -tlnp | grep :8080
+curl http://localhost:4040/api/tunnels
+
+# View logs
+docker compose logs backend
+docker compose logs frontend
+```
 
 ## Final Thoughts
 

@@ -4,6 +4,12 @@ source "https://rubygems.org"
 
 gem "jekyll-theme-chirpy", "~> 7.1", ">= 7.1.1"
 
+# Add missing pagination plugin
+gem "jekyll-paginate"
+
+# Add include cache plugin for include_cached support
+gem "jekyll-include-cache"
+
 gem "html-proofer", "~> 5.0", group: :test
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do

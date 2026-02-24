@@ -90,5 +90,3 @@ systemctl restart docker
 
 
 You are now back in business. Just remember to remove the `apt-mark hold` in the future once the upstream bug is officially resolved!
-
-```
